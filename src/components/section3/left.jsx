@@ -1,23 +1,24 @@
-import React from 'react'
-import { Omega } from 'lucide-react'
-import { Component } from 'lucide-react';
-import { Pi } from 'lucide-react';
+import React from "react";
+import { Omega } from "lucide-react";
+import { Component } from "lucide-react";
+import { Pi } from "lucide-react";
 const left = () => {
   return (
-    <div className="text-white py-6 pl-22 w-3/5">
+    <div className="text-white pb-10 pl-22 w-3/5">
       <h1 className="text-7xl font-semibold mb-20">
         Your Life for Greater <br />
         Self Of Yoga
       </h1>
       <div className="flex flex-col gap-10">
         <div className="flex items-center gap-5">
-          <div className="bg-pink-300 p-3 rounded-2xl text-black">
+          <div className="bg-pink-300 p-3 rounded-2xl text-black hover:rotate-[4deg] duration-200 hover:scale-120 cursor-pointer">
             <Omega size={20} strokeWidth={4} />
           </div>
-          <div className="text-xl w-140  pb-5 border-b-2 border-gray-400/30">
-            {" "}
-            <h2 className="font-semibold">Expert Instructors</h2>
-            <p className="font-light text-gray-400">
+          <div className="group text-xl w-140 pb-5 border-b-2 border-gray-400/30 hover:bg-gray-600 duration-200 rounded-4xl p-5 hover:scale-105  ">
+            <h2 className="font-semibold group-hover:underline">
+              Expert Instructors
+            </h2>
+            <p className="font-light  text-gray-400 group-hover:text-white duration-200 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
               dolorum eos veritatis fugit assumenda! Voluptatibus quo iusto
               magni adipisci quod.
@@ -25,13 +26,13 @@ const left = () => {
           </div>
         </div>
         <div className="flex items-center gap-5 ">
-          <div className="bg-green-300 p-3 rounded-2xl text-black">
+          <div className="bg-green-300 p-3 rounded-2xl text-black hover:rotate-[-4deg] duration-200 hover:scale-120 cursor-pointer">
             <Component size={20} strokeWidth={4} />
           </div>
-          <div className="text-xl w-140  pb-5 border-b-2 border-gray-400/30 ">
+          <div className="group text-xl w-140 pb-5 border-b-2 border-gray-400/30 hover:bg-gray-600 duration-200 rounded-4xl p-5 hover:scale-105 ">
             {" "}
             <h2 className="font-semibold">Expert Instructors</h2>
-            <p className="font-light text-gray-400">
+            <p className="font-light  text-gray-400 group-hover:text-white duration-200 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
               dolorum eos veritatis fugit assumenda! Voluptatibus quo iusto
               magni adipisci quod.
@@ -39,13 +40,13 @@ const left = () => {
           </div>
         </div>
         <div className="flex items-center gap-5">
-          <div className="bg-cyan-300 p-3 rounded-2xl text-black">
+          <div className="bg-cyan-300 p-3 rounded-2xl text-black hover:rotate-[4deg] duration-200 hover:scale-120 cursor-pointer">
             <Pi size={20} strokeWidth={4} />
           </div>
-          <div className="text-xl w-140">
+          <div className="group text-xl w-140 pb-5 border-b-2 border-gray-400/30 hover:bg-gray-600 duration-200 rounded-4xl p-5 hover:scale-105 ">
             {" "}
             <h2 className="font-semibold">Expert Instructors</h2>
-            <p className="font-light text-gray-400">
+            <p className="font-light  text-gray-400 group-hover:text-white duration-200 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
               dolorum eos veritatis fugit assumenda! Voluptatibus quo iusto
               magni adipisci quod.
@@ -55,6 +56,6 @@ const left = () => {
       </div>
     </div>
   );
-}
+};
 
-export default left
+export default left;
