@@ -4,7 +4,7 @@ import Right from './right';
 const hero = () => {
   return (
     <div>
-      <div className="flex h-165  py-20 backdrop-blur-sm">
+      <div className="lg:flex h-165  py-20 backdrop-blur-sm">
        <Left/>
        <Right/>
       </div>

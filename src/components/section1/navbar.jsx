@@ -6,7 +6,7 @@ const navbar = () => {
   return (
     <div>
       <div className="">
-        <div className="bg-gray-400/30 flex justify-between rounded-full text-white  py-3 text-lg ">
+        <div className="bg-gray-400/30 lg:flex justify-between rounded-full text-white  py-3 text-lg ">
           {" "}
           <h2 className="flex pl-4 items-center justify-center font-semibold gap-2 hover:cursor-crosshair">
             <span className="bg-black rounded-full p-1 ">
@@ -14,7 +14,9 @@ const navbar = () => {
             </span>
             Medtronic
           </h2>
-          <div className="flex justify-between gap-9 ">
+          
+          <div className="lg:flex justify-between gap-9 ">
+            <div className='hidden'><h2>menu</h2></div>
             <h2 className="hover:underline duration-300 ease-in-out hover:text-red-500 cursor-pointer">
               Home
             </h2>
@@ -32,10 +34,12 @@ const navbar = () => {
             </h2>
           </div>
           <div className="flex gap-5 pr-7 font-semibold">
-            <button className=" hover:bg-red-500 duration-200 hover:scale-110 hover:text-white rounded-full px-5 cursor-pointer">
+            <button className=" hover:bg-red-500 duration-200 hover:scale-110 hover:text-white rounded-full px-5 cursor-pointer
+            active:bg-red-800">
               Login
             </button>
-            <button className="flex justify-center items-center bg-white rounded-full text-black px-2 py-1 hover:scale-110 duration-200 hover:bg-red-500 hover:text-white">
+            <button className="flex justify-center items-center bg-white rounded-full text-black px-2 py-1 hover:scale-110 duration-200 hover:bg-red-500 hover:text-white
+            active:bg-red-800">
               Sign up <MoveRight size={16} strokeWidth={1} />
             </button>
           </div>

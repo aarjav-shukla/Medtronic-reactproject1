@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 
 const right = () => {
   return (
-    <div className="w-1/3 h-150 flex items-end">
+    <div className="w-1/3 h-150 lg:flex items-end">
       <div className="bg-gray-600/30 w-100 h-80  mb-6 rounded-3xl hover:bg-gray-600/20 duration-200 hover:scale-105  cursor-pointer ">
         <div className="p-5 flex items-center gap-4 ">
           <div className="flex ">
